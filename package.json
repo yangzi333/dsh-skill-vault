@@ -1,7 +1,7 @@
 {
   "name": "dsh-skill-vault",
-  "version": "3.0.3",
-  "description": "DSH 技能库：只读盘点全部技能、按功能分类收纳、下载入口、实时进度、调用监控",
+   "version": "3.0.4",
+  "description": "DSH skill vault: read-only inventory, categorized library, bundles, downloads and live skill-call monitor for DeepSeek Harness. 只读盘点/分类收纳/技能包/下载/调用监控",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
