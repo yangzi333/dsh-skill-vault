@@ -1,5 +1,7 @@
 # dsh-skill-vault — DSH 技能库
 
+> Read-only skill inventory + curated library for DeepSeek Harness (DSH): aggregate every skill source, categorize, harvest, download, and watch live skill calls.
+
 把散落在各处的技能**只读**聚合成一份目录，按功能分类，提供「下载并入库」入口，
 并在面板里实时显示已安装技能与正在下载的技能。
 
