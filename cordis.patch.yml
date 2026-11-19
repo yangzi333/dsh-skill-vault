@@ -1,0 +1,10 @@
+# dsh-skill-vault bundle patch
+#
+# 只插一行 plugin：服务依赖写在 lib/index.js 的
+#   export const inject = ["webServer", "skills"]
+# 里，与 dsh-better-sidebar / dsh-pet 同款写法（row 只认 id / name / config / disabled）。
+#
+# 本插件对技能源只读：唯一的写点是 <DSH_HOME>/skill-library/。
+- insert:
+    - id: skill-vault
+      name: 'dsh-skill-vault'

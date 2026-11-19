@@ -1,0 +1,61 @@
+{
+  "name": "dsh-skill-vault",
+  "version": "3.0.3",
+  "description": "DSH 技能库：只读盘点全部技能、按功能分类收纳、下载入口、实时进度、调用监控",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "tests/"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node tests/run-tests.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yangzi333/dsh-skill-vault.git"
+  },
+  "homepage": "https://github.com/yangzi333/dsh-skill-vault#readme",
+  "bugs": {
+    "url": "https://github.com/yangzi333/dsh-skill-vault/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "skill",
+    "skill-manager",
+    "cordis"
+  ],
+  "author": "dsh-skill-vault contributors",
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
+    }
+  },
+  "license": "MIT"
+}
